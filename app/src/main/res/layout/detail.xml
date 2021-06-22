@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/BuildingImage"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/abc_btn_radio_to_on_mtrl_015" />
+
+    <TextView
+        android:id="@+id/BuildingName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/BuildingImage"
+        android:text="Name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/BuildingNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/BuildingName"
+        android:text="Number"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/BuildingTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/BuildingName"
+        android:visibility="invisible"
+        android:text="Tag"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+    <TextView
+        android:id="@+id/BuildingInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_below="@+id/BuildingNumber"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="Info"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ListView android:id="@+id/reviewList"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true" >
+
+    </ListView>
+
+    <TextView android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:text="등록된 한줄 평이 없습니다."
+        android:textSize="30sp"
+        android:layout_marginTop="540dp"
+        android:layout_marginRight="50dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="490dp"
+        android:text="한줄평 작성" />
+
+</RelativeLayout>

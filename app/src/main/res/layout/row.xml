@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/BuildingImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/abc_btn_radio_to_on_mtrl_015" />
+
+    <TextView
+        android:id="@+id/BuildingName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Name"
+        android:layout_toRightOf="@+id/BuildingImage"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/BuildingNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Number"
+        android:layout_toRightOf="@+id/BuildingImage"
+        android:layout_below="@+id/BuildingName"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/BuildingTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Other"
+        android:layout_toRightOf="@+id/BuildingImage"
+        android:layout_below="@+id/BuildingNumber"
+        android:visibility="invisible"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/BuildingInfo"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/BuildingImage"
+        android:layout_alignParentRight="true"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Info"
+        android:layout_toRightOf="@+id/BuildingImage"
+        android:layout_below="@+id/BuildingNumber"
+        android:visibility="invisible"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000" />
+
+</RelativeLayout>
